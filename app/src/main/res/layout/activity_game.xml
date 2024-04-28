@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/backgroundGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="194dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="181dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="411dp"
+        android:layout_height="341dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="325dp"
+        android:background="@drawable/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img_dino"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/bounce" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img_tree"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/tiger" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="156dp"
+        android:layout_height="107dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/light_green"
+        android:fontFamily="@font/acme"
+        android:text="Jump"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="@font/acme"
+        android:text="start"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_highscore"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/aldrich"
+        android:text="High Score: 0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
