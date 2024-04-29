@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Bounce</string>
+    <string name="menu">Menu</string>
+    <string name="score_0">Score: 0</string>
+    <string name="jump">Jump</string>
+    <string name="start">start</string>
+    <string name="high_score_0">High Score: 0</string>
+    <string name="go_to_menu">Go to Menu</string>
+    <string name="bounse">Bounse</string>
+    <string name="play">Play</string>
+    <string name="reset_high_score">Reset High Score</string>
+    <string name="exit">Exit</string>
 </resources>

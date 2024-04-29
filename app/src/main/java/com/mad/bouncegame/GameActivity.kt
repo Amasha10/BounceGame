@@ -1,6 +1,6 @@
 package com.mad.bouncegame
 
-import android.graphics.Rect
+import  android.graphics.Rect
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
